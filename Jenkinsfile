@@ -4,7 +4,7 @@ pipeline {
         PROJECT = 'expense'
         COMPONENT = 'backend'
         appVersion = ''
-        ACC_ID = '864981750890'   /* from EKS private repository */
+        ACC_ID = '315069654700'
     }
     options {
         disableConcurrentBuilds()
@@ -50,7 +50,7 @@ pipeline {
               }
             }
         } */
-        stage('Docker Build') {   
+        stage('Docker Build') {
             steps {
                script{
                 withAWS(region: 'us-east-1', credentials: 'aws-creds') {
