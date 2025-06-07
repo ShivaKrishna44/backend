@@ -60,10 +60,10 @@ pipeline {
                     sudo usermod -aG docker $USER
 
                     newgrp docker
-                    docker build -t  ${ACC_ID}.dkr.ecr.us-east-1.amazonaws.com/${project}/${component}:${appVersion} .
+                    docker build -t 864981750890.dkr.ecr.us-east-1.amazonaws.com/expense/backend:1.0.0 .
                     
-                    docker push ${ACC_ID}.dkr.ecr.us-east-1.amazonaws.com/${project}/${component}:${appVersion}
-                    """
+                     docker push 864981750890.dkr.ecr.us-east-1.amazonaws.com/expense/backend:1.0.0          
+                               """
                 }
                  
                }
