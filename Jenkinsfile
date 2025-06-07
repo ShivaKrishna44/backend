@@ -73,7 +73,7 @@ pipeline {
                 expression { params.deploy }
             }
             steps{
-                build job: '1.0.0', parameters: [string(name: 'version', value: "${appVersion}")], wait: true
+                build job: 'backend', parameters: [string(name: 'version', value: "${appVersion}")], wait: true
             }
         }
     }
