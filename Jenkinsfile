@@ -68,14 +68,14 @@ pipeline {
                }
             }
         }
-        stage('Trigger Deploy'){
+    /*   stage('Trigger Deploy'){
             when { 
                 expression { params.deploy }
             }
             steps{
                 build job: 'backend', parameters: [string(name: 'version', value: "${appVersion}")], wait: true
             }
-        }
+        } */
     }
     post { 
         always { 
